@@ -14,7 +14,7 @@ server:
 eureka:
  client:
   service-url:
-   defaultZone: http://localhost:7001/eureka 
+   defaultZone: http://eureka7001.com:7001/eureka,http://eureka7002.com:7002/eureka
 
 mybatis-plus:
   # 如果是放在src/main/java目录下 classpath:/com/yourpackage/*/mapper/*Mapper.xml

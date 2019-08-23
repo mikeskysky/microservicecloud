@@ -81,6 +81,7 @@
 		<module>microservicecloud-provider</module>
 		<module>microservicecloud-consumer</module>
 		<module>microservicecloud-eureka</module>
+		<module>microservicecloud-eureka-cluster</module>
 	</modules>
 	<build>
 		<finalName>micorservicecloud</finalName>
