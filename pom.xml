@@ -80,5 +80,26 @@
 		<module>microservicecloud-api</module>
 		<module>microservicecloud-provider</module>
 		<module>microservicecloud-consumer</module>
+		<module>microservicecloud-eureka</module>
 	</modules>
+	<build>
+		<finalName>micorservicecloud</finalName>
+		<resources>
+			<resource>
+				<directory>src/main/resources</directory>
+				<filtering>true</filtering>
+			</resource>
+		</resources>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-resources-plugin</artifactId>
+				<configuration>
+					<delimiters>
+						<delimit>$</delimit>
+					</delimiters>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
 </project>

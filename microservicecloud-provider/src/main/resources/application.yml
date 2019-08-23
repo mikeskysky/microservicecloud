@@ -1,4 +1,6 @@
 spring:
+  application:
+   name: microservice-provider
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource
     driver-class-name: com.mysql.jdbc.Driver
@@ -7,9 +9,12 @@ spring:
     password: root
 
 server:
- port: 8081
+ port: 9081
  
- 
+eureka:
+ client:
+  service-url:
+   defaultZone: http://localhost:7001/eureka 
 
 mybatis-plus:
   # 如果是放在src/main/java目录下 classpath:/com/yourpackage/*/mapper/*Mapper.xml
@@ -41,3 +46,8 @@ mybatis-plus:
     cache-enabled: false
     #配置JdbcTypeForNull
     jdbc-type-for-null: 'null'
+info:
+ app.name: atguigu-micorservicecloud
+ company.name: www.baidu.com
+ build.artifactId: $project.artifactId$
+ build.version: $project.version$
